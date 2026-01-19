@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos</title>
+
+    <link rel="stylesheet" href="CSS/contactos.css">
+    <script src="js/favoritos.js" defer></script>
+</head>
+<body>
+
+<!-- Perfil -->
+<a href="perfil.html" class="profile-link">
+    <img src="https://us.123rf.com/450wm/tuktukdesign/tuktukdesign1712/tuktukdesign171200013/91443012-user-icon-vector-male-person-symbol-profile-avatar-sign-in-flat-color-glyph-pictogram-illustration.jpg"
+         class="profile-img"
+         alt="Perfil">
+</a>
+
+<h2>Favoritos</h2>
+
+<!-- Barra superior -->
+<div class="top-bar">
+    <img 
+        src="https://cdn-icons-png.flaticon.com/512/4715/4715177.png"
+        class="search-icon"
+        alt="Buscar"
+    >
+
+    <input 
+        type="text"
+        id="search"
+        placeholder="Buscar por nombre o teléfono"
+    >
+
+    <div class="buttons">
+        <a href="contactos.html" class="btn-fav">📒 Contactos</a>
+    </div>
+</div>
+
+<!-- Tabla -->
+<div class="table-container">
+    <table id="contactsTable">
+        <tbody>
+            <tr onclick="verDetalle()">
+                <td>
+                    <img src="https://www.worldhistory.org/img/r/p/500x600/17490.jpg?v=1730992031-1685716621">
+                </td>
+                <td>
+                    <strong>Napoleón Bonaparte ✨</strong><br>
+                    <small>+502 9999-0000</small>
+                </td>
+            </tr>
+
+            <tr onclick="verDetalle()">
+                <td>
+                    <img src="https://cdn.britannica.com/65/227665-050-D74A477E/American-actor-Leonardo-DiCaprio-2016.jpg">
+                </td>
+                <td>
+                    <strong>Leonardo DiCaprio ✨</strong><br>
+                    <small>+502 1010-1010</small>
+                </td>
+            </tr>
+            <tr onclick="verDetalle()">
+                <td>
+                    <img src="https://media.newyorker.com/photos/5d7299a5af596b00089f162b/master/pass/Farrow-JeffreyEpstein-2.jpg">
+                </td>
+                <td>
+                    <strong>Jeffrey Epstein ✨</strong><br>
+                    <small>+502 1100-1100</small>
+                </td>
+            </tr>
+
+            <tr onclick="verDetalle()">
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmCiOKihKZluyu4pJW-ic0jcHpkiPleq5w9Q&s">
+                </td>
+                <td>
+                    <strong>Megan Fox ✨</strong><br>
+                    <small>+502 1212-1212</small>
+                </td>
+            </tr>
+            <tr onclick="verDetalle()">
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2tqcMk-Xv7Q-ILDcX6cWv7ppRhjlJFY5ofQ&s">
+                </td>
+                <td>
+                    <strong>Nicolás Maduro ✨</strong><br>
+                    <small>+502 1313-1313</small>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
