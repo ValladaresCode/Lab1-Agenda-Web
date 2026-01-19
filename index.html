@@ -1,11 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+
+    <link rel="stylesheet" href="CSS/login.css">
+    <script src="js/login.js" defer></script>
 </head>
 <body>
+
+<form class="login-form" id="loginForm">
     
+    <!-- Espacio para imagen -->
+    <div class="logo">
+        <img src="https://us.123rf.com/450wm/tuktukdesign/tuktukdesign1712/tuktukdesign171200013/91443012-user-icon-vector-male-person-symbol-profile-avatar-sign-in-flat-color-glyph-pictogram-illustration.jpg" alt="Logo">
+    </div>
+
+    <h2>Iniciar Sesión</h2>
+
+    <input 
+        type="email" 
+        id="email" 
+        placeholder="Correo electrónico"
+        required
+    >
+
+    <input 
+    type="text"
+    id="phone"
+    placeholder="Teléfono (0000-1111)"
+    maxlength="9"
+    required
+    >
+
+    <div class="password-box">
+        <input 
+            type="password" 
+            id="password" 
+            placeholder="Contraseña"
+            required
+        >
+        <button type="button" id="togglePassword">👁</button>
+    </div>
+
+    
+
+
+    <p id="error" class="error"></p>
+
+    <button type="submit" class="btn-login">
+        Iniciar sesión
+    </button>
+</form>
+
 </body>
 </html>
