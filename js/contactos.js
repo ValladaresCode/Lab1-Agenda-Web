@@ -16,5 +16,5 @@ function verDetalle() {
 
 function logout() {
     localStorage.clear();
-    window.location.href = "../index.html";
+    window.location.href = "Lab1-Agenda-Web/index.html";
 }
