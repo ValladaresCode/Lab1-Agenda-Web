@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Contacto</title>
+
+    <link rel="stylesheet" href="CSS/nuevo-contacto.css">
+    <script src="js/nuevo-contacto.js" defer></script>
+</head>
+<body>
+
+<h2>Nuevo Contacto</h2>
+
+<form class="contact-form">
+
+    <label>
+        Nombre *
+        <input type="text" required>
+    </label>
+
+    <label>
+        Apellido (Opcional)
+        <input type="text">
+    </label>
+
+    <label>
+        Teléfono *
+        <input 
+            type="text"
+            id="phone"
+            value="+502 "
+            required
+            pattern="\+502\s\d{4}-\d{4}"
+        >
+    </label>
+
+    <label>
+        Descripción (Opcional)
+        <textarea rows="3"></textarea>
+    </label>
+
+    <div class="buttons">
+        <button type="submit" class="btn">Guardar</button>
+        <a href="contactos.html" class="btn cancel">Cancelar</a>
+    </div>
+
+</form>
+
+</body>
+</html>
