@@ -57,5 +57,5 @@ form.addEventListener("submit", (e) => {
     localStorage.setItem("userPassword", password);
 
     // Redirigir
-    window.location.href = "../contactos.html";
+    window.location.href = "contactos.html";
 });
