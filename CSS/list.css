@@ -1,0 +1,247 @@
+/* ===== VARIABLES ===== */
+:root {
+    --bg: #111827;
+    --card: #1f2933;
+    --card-soft: #374151;
+    --text: #f9fafb;
+    --primary: #22c55e;
+    --secondary: #38bdf8;
+    --accent: #f97316;
+}
+
+/* ===== MODO CLARO ===== */
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #f3f4f6;
+        --card: #ffffff;
+        --card-soft: #e5e7eb;
+        --text: #111827;
+    }
+}
+
+/* ===== RESET ===== */
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background-color: var(--bg);
+    padding: 20px;
+    margin: 0;
+    color: var(--text);
+}
+
+/* ===== BOTÓN CONTACTOS ===== */
+.btn-fav {
+    background-color: var(--accent);
+    color: #111827;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.btn-fav:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(249,115,22,.6);
+}
+
+/* ===== CONTENEDOR ===== */
+.list-container {
+    max-width: 510px;
+    margin: 0 auto;
+    background-color: var(--card);
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.4);
+}
+
+/* ===== TÍTULO ===== */
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* ===== IMAGEN ===== */
+.todo-img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 15px auto;
+    border-radius: 10px;
+}
+
+/* ===== TOP ===== */
+.top-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* ===== FILTRO ===== */
+#filterSelect {
+    height: 36px;
+    padding: 0 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    background-color: var(--card-soft);
+    border: 2px solid var(--secondary);
+    color: var(--text);
+    cursor: pointer;
+}
+
+/* ===== FORM ===== */
+#listForm {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+}
+
+/* ===== INPUTS ===== */
+#listForm input,
+#listForm select,
+#listForm button {
+    height: 36px;
+    padding: 0 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+/* Input */
+#listForm input {
+    flex: 1;
+    background-color: var(--card-soft);
+    border: 2px solid var(--primary);
+    color: var(--text);
+}
+
+/* Select */
+#listForm select {
+    background-color: var(--card-soft);
+    border: 2px solid var(--secondary);
+    color: var(--text);
+}
+
+/* ===== BOTONES (TODOS) ===== */
+button {
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    transition: transform .2s, box-shadow .2s, background .2s;
+}
+
+/* Agregar */
+#listForm button {
+    background-color: var(--primary);
+    color: #111827;
+}
+
+#listForm button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(34,197,94,.6);
+}
+
+/* ===== LISTA ===== */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ===== ITEM ===== */
+li {
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: var(--card-soft);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+
+    /* 🔥 animación al aparecer */
+    animation: fadeSlide .3s ease;
+}
+
+/* ===== ANIMACIÓN ===== */
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== PRIORIDADES (BADGES) ===== */
+.badge {
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+.alta { background: #ef4444; color: white; }
+.media { background: #facc15; color: #111827; }
+.baja { background: #22c55e; color: #111827; }
+
+/* ===== COMPLETADO ===== */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.complete-box {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.completed-x {
+    color: var(--accent);
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+/* ===== BOTONES ACCIÓN ===== */
+.actions button {
+    margin-left: 5px;
+    background-color: transparent;
+    color: var(--secondary);
+}
+
+.actions button:hover {
+    transform: scale(1.15);
+    color: var(--accent);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+    .top-list {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #listForm {
+        width: 100%;
+    }
+}
+
+/* ===== RESALTADO IMAGEN TODO ===== */
+.todo-img {
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.todo-img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(0,0,0,.45);
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+
+    <link rel="stylesheet" href="CSS/list.css">
+    <script src="js/list.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<a href="contactos.html" class="btn-fav">📒 Contactos</a>
+
+
+<div class="list-container">
+    <h2>Lista</h2>
+    <img 
+    src="https://img.freepik.com/vector-gratis/lista-tareas-hombre-negocios-estilo-plano_79603-145.jpg?semt=ais_hybrid&w=740&q=80"
+    alt="Lista de tareas"
+    class="todo-img"
+>
+
+    <div class="top-list">
+
+    <!-- Filtro desplegable -->
+    <select id="filterSelect">
+        <option value="all">Todas</option>
+        <option value="pending">Pendientes</option>
+        <option value="completed">Completadas</option>
+    </select>
+
+    <!-- Formulario -->
+    <form id="listForm">
+        <input 
+            type="text" 
+            id="task" 
+            placeholder="Nueva tarea" 
+            required
+        >
+
+        <select id="priority">
+            <option value="1">Alta</option>
+            <option value="2">Media</option>
+            <option value="3">Baja</option>
+        </select>
+
+        <button type="submit">Agregar</button>
+    </form>
+
+</div>
+
+<ul id="taskList"></ul>
+
+</body>
+</html>
