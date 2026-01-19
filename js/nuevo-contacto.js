@@ -20,5 +20,5 @@ form.addEventListener("submit", (e) => {
 
     alert("Contacto guardado, no funcional por instrucciones.");
 
-    window.location.href = "../contactos.html";
+    window.location.href = "contactos.html";
 });
