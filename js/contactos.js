@@ -11,10 +11,10 @@ searchInput.addEventListener("keyup", () => {
 });
 
 function verDetalle() {
-    window.location.href = "../detalle-contacto.html";
+    window.location.href = "detalle-contacto.html";
 }
 
 function logout() {
     localStorage.clear();
-    window.location.href = "Lab1-Agenda-Web/index.html";
+    window.location.href = "index.html";
 }

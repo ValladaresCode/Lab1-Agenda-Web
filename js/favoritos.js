@@ -1,5 +1,5 @@
 function verDetalle() {
-    window.location.href = "../detalle-contacto.html";
+    window.location.href = "detalle-contacto.html";
 }
 
 // Búsqueda (nombre o teléfono)
