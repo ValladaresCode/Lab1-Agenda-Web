@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Contacto</title>
+
+    <link rel="stylesheet" href="CSS/detalle.css">
+</head>
+<body>
+
+<a href="contactos.html" class="btn-fav">📒 Contactos</a>
+
+<div class="detail-card">
+
+    <img 
+        src="https://img.a.transfermarkt.technology/portrait/big/28003-1740766555.jpg"
+        alt="Contacto"
+        class="avatar"
+    >
+
+    <h2>Lionel Messi</h2>
+
+    <ul class="details">
+        <li><strong>Nombre:</strong> Lionel</li>
+        <li><strong>Apellido:</strong> Messi</li>
+        <li><strong>Teléfono:</strong> +502 2222-0000</li>
+        <li><strong>Correo:</strong> messi@email.com</li>
+        <li><strong>Descripción:</strong> Contacto más famoso y mejor de la historia del fútbol</li>
+        <li><strong>Nota:</strong> La vista es estática porque el laboratorio indica que el desarrollo es visual</li>
+    </ul>
+
+</div>
+
+<script>
+    const avatar = document.querySelector('.avatar');
+
+    avatar.addEventListener('click', () => {
+        avatar.classList.toggle('expanded');
+    });
+</script>
+
+</body>
+</html>
