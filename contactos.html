@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+
+    <link rel="stylesheet" href="CSS/contactos.css">
+    <script src="js/contactos.js" defer></script>
+</head>
+<body>
+ 
+<button class="logout-btn" onclick="logout()">Cerrar sesión</button>
+
+
+<a href="perfil.html" class="profile-link">
+    <img src="https://us.123rf.com/450wm/tuktukdesign/tuktukdesign1712/tuktukdesign171200013/91443012-user-icon-vector-male-person-symbol-profile-avatar-sign-in-flat-color-glyph-pictogram-illustration.jpg" alt="Perfil" class="profile-img">
+</a>
+
+
+<h2>Contactos</h2>
+
+<div class="top-bar">
+    <img 
+        src="https://cdn-icons-png.flaticon.com/512/4715/4715177.png"
+        alt="Buscar"
+        class="search-icon"
+    >
+
+    <input 
+        type="text" 
+        id="search" 
+        placeholder="Buscar por nombre o teléfono"
+    >
+
+    <div class="buttons">
+    <a href="nuevo-contacto.html" class="btn-add">➕ Nuevo</a>
+    <a href="favoritos.html" class="btn-fav">⭐ Favoritos</a>
+    <a href="list.html" class="btn-todo">📝 ToDo</a>
+</div>
+</div>
+
+
+<div class="table-container">
+    <table id="contactsTable">
+        <tbody>
+            <tr onclick="verDetalle()">
+                <td><img src="https://preview.redd.it/ucv34e0c4q061.png?width=640&crop=smart&auto=webp&s=d7205528f9553dba539db7ac8c30dbbd6efcdb6b"></td>
+                <td>
+                    <strong>Juan</strong><br>
+                    <small>+502 1111-0000</small>
+                </td>
+            </tr>
+            <tr onclick="verDetalle()">
+                <td><img src="https://img.a.transfermarkt.technology/portrait/big/28003-1740766555.jpg?lm=1"></td>
+                <td>
+                    <strong>Lionel Messi</strong><br>
+                    <small>+502 2222-0000</small>
+                </td>
+            </tr>
+            <tr onclick="verDetalle()">
+                <td><img src="https://media.licdn.com/dms/image/v2/D5603AQF-RYZP55jmXA/profile-displayphoto-shrink_200_200/B56ZRi8g.aGsAY-/0/1736826818802?e=2147483647&v=beta&t=bKWfN6UwwtiCqFWsG7rBELbd48qJOAMLdxhBzzkJV0k"></td>
+                <td>
+                    <strong>Bill Gates</strong><br>
+                    <small>+502 3333-0000</small>
+                </td>
+            </tr>
+            <tr onclick="verDetalle()">
+                <td><img src="https://es.web.img2.acsta.net/pictures/17/02/08/16/50/452749.jpg"></td>
+                <td>
+                    <strong>Will Smith</strong><br>
+                    <small>+502 4444-0000</small>
+                </td>
+            </tr>
+            <tr onclick="verDetalle()">
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW3esC9Pd3te6lCOjHAAfhOyTTxJOp4FnUuw&s"></td>
+                <td>
+                    <strong>Albert Einstein</strong><br>
+                    <small>+502 5555-0000</small>
+                </td>
+            </tr>
+            <tr onclick="verDetalle()">
+                <td><img src="https://hips.hearstapps.com/hmg-prod/images/elon-musk-gettyimages-2147789844-web-675b2c17301ea.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=640:*"></td>
+                <td>
+                    <strong>Elon Musk</strong><br>
+                    <small>+502 6666-0000</small>
+                </td>
+            </tr>
+            <tr onclick="verDetalle()">
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz8Wa9dyqciKLll8aJQteXjJRD2v-JlwF9tg&s"></td>
+                <td>
+                    <strong>Sydney Sweeney</strong><br>
+                    <small>+502 7777-0000</small>
+                </td>
+            </tr>
+            <tr onclick="verDetalle()">
+                <td><img src="https://es.web.img2.acsta.net/c_310_420/pictures/22/03/21/14/03/3443055.jpg"></td>
+                <td>
+                    <strong>Robert Downey Jr.</strong><br>
+                    <small>+502 8888-0000</small>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
